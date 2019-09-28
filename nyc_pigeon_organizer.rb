@@ -6,11 +6,11 @@ def nyc_pigeon_organizer(data)
     name_hash.each_pair do |inner_keys, name_array|
       name_array.each do |pigeon_name|
     
-      if new_hash[pigeon_name].nil?
+      if !new_hash[pigeon_name]
           new_hash[pigeon_name] = {}
       end
       
-      if new_hash[pigeon_name][attributes].nil?
+      if !new_hash[pigeon_name][attributes]
         new_hash[pigeon_name][attributes] = []
       end
       
