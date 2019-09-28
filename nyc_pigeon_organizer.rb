@@ -10,11 +10,11 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon_name] = {}
       end
       
-      if new_hash[pigeon_name][:color].nil?
-        new_hash[pigeon_name][:color] = []
-      end
+      #if new_hash[pigeon_name][:color].nil?
+       # new_hash[pigeon_name][:color] = []
+      #end
       
-      new_hash[pigeon_name][attributes] << inner_keys
+      #new_hash[pigeon_name][attributes] << inner_keys
       
       end
     end
