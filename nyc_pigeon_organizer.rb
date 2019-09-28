@@ -14,18 +14,10 @@ def nyc_pigeon_organizer(data)
         new_hash[pigeon_name][:color] = []
       end
       
-      new_hash[pigeon_name][attributes] << inner_keys
-  
-     # if name_array.include? pigeon_name #&& !(inner_hash[attributes].include? inner_keys.to_s))
-      #    inner_hash[attributes].push(inner_keys.to_s)
-      #end
-      
+      new_hash[pigeon_name][attributes].push(inner_keys)
       
       end
     end
   end
- # inner_hash
-  new_hash
-  #p data
   p new_hash
 end
