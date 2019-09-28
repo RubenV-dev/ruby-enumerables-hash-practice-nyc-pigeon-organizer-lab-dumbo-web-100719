@@ -12,12 +12,11 @@ def nyc_pigeon_organizer(data)
       if !new_hash[pigeon_name]
           new_hash[pigeon_name] = inner_hash
       end
+      end
       if name_hash[inner_keys].include? pigeon_name #&& new_hash[pigeon_name][attributes] == attributes
           inner_hash[attributes].push(1)#(inner_keys.to_s)
       end
       
-      
-      end
     end
   end
  # inner_hash
