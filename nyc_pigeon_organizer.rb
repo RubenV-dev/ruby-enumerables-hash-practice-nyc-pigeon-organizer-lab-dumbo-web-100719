@@ -13,8 +13,8 @@ def nyc_pigeon_organizer(data)
           new_hash[pigeon_name] = inner_hash
       end
       p name_array
-      if name_array.include? pigeon_name #&& new_hash[pigeon_name][attributes] == attributes
-          inner_hash[attributes].push(1)#(inner_keys.to_s)
+      if name_array.include? pigeon_name #&& inner_hash[attributes] == attributes
+          inner_hash[attributes].push(inner_keys.to_s)
       end
       
       
