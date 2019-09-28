@@ -10,12 +10,11 @@ def nyc_pigeon_organizer(data)
       name_array.each do |pigeon_name|
         inner_hash[attributes] = []
       if !new_hash[pigeon_name]
-          #inner_hash[attributes] = []
           new_hash[pigeon_name] = inner_hash
       end
-      #if name_hash[inner_keys].include? pigeon_name #&& new_hash[pigeon_name][attributes] == attributes
-       #   inner_hash[attributes].push(inner_keys.to_s)
-      #end
+      if name_hash[inner_keys].include? pigeon_name #&& new_hash[pigeon_name][attributes] == attributes
+          inner_hash[attributes].push(1)#(inner_keys.to_s)
+      end
       
       
       end
