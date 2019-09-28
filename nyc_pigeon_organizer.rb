@@ -14,10 +14,11 @@ def nyc_pigeon_organizer(data)
         new_hash[pigeon_name][:color] = []
       end
       
-      new_hash[pigeon_name][attributes].push(inner_keys)
+      new_hash[pigeon_name][attributes] << inner_keys
       
       end
     end
   end
+  new_hash
   p new_hash
 end
