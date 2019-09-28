@@ -1,6 +1,4 @@
 def nyc_pigeon_organizer(data)
-  #attributes are :color,:gender,:lives
-  #inner_keys are color range,gender and location keys
   
   new_hash = {}
   
@@ -8,8 +6,12 @@ def nyc_pigeon_organizer(data)
     name_hash.each_pair do |inner_keys, name_array|
       name_array.each do |pigeon_name|
         new_hash[pigeon_name][attributes] = []
-      if !new_hash[pigeon_name]
+      if new_hash[pigeon_name].nil?
           new_hash[pigeon_name] = {}
+      end
+      
+      if new_hash[pigeon_name][inner_keys].nil?
+        new_hash[pigeon_name][inner_keys] = []
       end
       
       new_hash[pigeon_name][attributes] << inner_keys
