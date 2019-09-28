@@ -27,5 +27,5 @@ def nyc_pigeon_organizer(data)
  # inner_hash
   new_hash
   #p data
-  #p new_hash
+  p new_hash
 end
