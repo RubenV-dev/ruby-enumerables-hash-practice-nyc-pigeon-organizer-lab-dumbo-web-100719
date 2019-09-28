@@ -3,14 +3,13 @@ def nyc_pigeon_organizer(data)
   #inner_keys are color range,gender and location keys
   
   new_hash = {}
-  inner_hash = {}
   
   data.each_pair do |attributes, name_hash|
     name_hash.each_pair do |inner_keys, name_array|
       name_array.each do |pigeon_name|
-        inner_hash[attributes] = []
+        new_hash[pigeon_name][attributes] = []
       if !new_hash[pigeon_name]
-          new_hash[pigeon_name] = inner_hash
+          new_hash[pigeon_name] = {}
       end
       
       new_hash[pigeon_name][attributes] << inner_keys
