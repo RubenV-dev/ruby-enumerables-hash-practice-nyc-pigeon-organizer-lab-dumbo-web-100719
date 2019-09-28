@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   new_hash = {}
   inner_hash = {}
   
-  data.each do |attributes, name_hash|
+  data.each_pair do |attributes, name_hash|
     name_hash.each_pair do |inner_keys, name_array|
       name_array.each do |pigeon_name|
         inner_hash[attributes] = []
